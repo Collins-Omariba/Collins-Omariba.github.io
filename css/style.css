@@ -305,7 +305,8 @@ header{
 /* My services section */
 
 .my-services {
-    background-color: var(--clr-dark);
+    /* Change value of background color  to --clr--dark inorder to remove inverted theme */
+    background-color: var(--clr-light);
     background-image: url(../img/my-services-bg.png);
     background-size: cover;
     background-blend-mode: multiply;
@@ -315,6 +316,7 @@ header{
 }
 
 .section__title--services{
+   
     color: var(--clr-accent);
     position: relative;
 
@@ -338,6 +340,8 @@ header{
 .service{
     max-width: 500px;
     margin: 0 auto;
+     /* Change value of  color to --clr-light  inorder to remove inverted theme */
+    color: var(--clr-dark);
 }
 
 @media(min-width: 800px){
@@ -388,14 +392,18 @@ header{
         position: relative;
         z-index: 2;
     }
+    .github__link{
+        padding: 3em;
+    }
 }
 
 
 /* My work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    /* Change value of background color  to --clr--dark and color to --clr-light inorder  to remove inverted theme */
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 
 }
@@ -488,7 +496,7 @@ text-decoration: none;
 }
 
 .portfolio-item-individual img{
-    padding: 3em 3em ;
+    /*  */
 }
 
 .portfolio-item-individual h3{
