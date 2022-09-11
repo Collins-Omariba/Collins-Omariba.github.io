@@ -13,12 +13,8 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    /* --clr-light: #ecf1f5; */
-    /* --clr-dark: #303030; */
-
-    /* Currrently using inverted theme */
-    --clr-dark: #ecf1f5;
-    --clr-light: #303030;
+    --clr-light: #ecf1f5;
+    --clr-dark: #303030;
     --clr-accent: #089efe;
 
     --fs-h1: 3rem;
@@ -47,8 +43,8 @@ html{
 }
 
 body{
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     margin: 0;
     font-family: var(--ff--primary);
     font-size: var(--fs-body);
@@ -79,7 +75,7 @@ strong{
     display: inline-block;
     padding: .5em 2.5em ;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -146,11 +142,7 @@ header{
 }
 .nav{
     position: fixed;
-
-    /* Changes made due to  inverted theme */
-
-
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark);
     color: var(--clr-accent);
     top: 0;
     bottom: 0;
@@ -193,12 +185,7 @@ header{
 }
 
 .nav__link:hover{
-    
-
-    /* Changes made due to  inverted theme */
-
-
-    color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .nav-open .nav { 
@@ -305,12 +292,11 @@ header{
 /* My services section */
 
 .my-services {
-    /* Change value of background color  to --clr--dark inorder to remove inverted theme */
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark);
     background-image: url(../img/my-services-bg.png);
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
     
 }
@@ -328,7 +314,7 @@ header{
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
+    background: var(--clr-dark);
 }
 .services{
     margin-bottom: 4em;
@@ -340,8 +326,7 @@ header{
 .service{
     max-width: 500px;
     margin: 0 auto;
-     /* Change value of  color to --clr-light  inorder to remove inverted theme */
-    color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 @media(min-width: 800px){
@@ -401,9 +386,8 @@ header{
 /* My work */
 
 .my-work {
-    /* Change value of background color  to --clr--dark and color to --clr-light inorder  to remove inverted theme */
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
     text-align: center;
 
 }
@@ -496,7 +480,7 @@ text-decoration: none;
 }
 
 .portfolio-item-individual img{
-    /*  */
+    padding: 1em;
 }
 
 .portfolio-item-individual h3{
@@ -504,7 +488,7 @@ text-decoration: none;
 }
 
 .portfolio-item-individual button{
-    color: var(--clr-dark);
+    color: var(--clr-light);
     background-color: var(--clr-accent);
     border: none;
     border-radius: 5%;
@@ -520,10 +504,14 @@ text-decoration: none;
 
 .github__link{
     font-weight: var(--fw-bold);
-    color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .github__link:hover{
     opacity: .7;
     text-decoration: underline;
+}
+
+.screen_shot_text{
+    color: var(--clr-accent);
 }
