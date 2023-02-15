@@ -515,3 +515,7 @@ text-decoration: none;
 .screen_shot_text{
     color: var(--clr-accent);
 }
+
+.additional_skills{
+    color: var(--clr-accent);
+}
