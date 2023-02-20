@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary-Pred-Web-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- fonts (confirm link) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900
+    |Source+Sans+Pro:300,900&display=swap">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="HTML tag logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html"class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services"class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="index.html#about"class="nav__link">About me </a></li>
+                <li class="nav__item"><a href="index.html#work"class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!--Introduction-->
+
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+    Developer Salary Prediction<strong>ML Web App</strong>
+    </h1>
+    <p class="section___subtitle  section___subtitle--intro">
+        <a href="https://github.com/Collins-Omariba/Dev-Salary-Pred-Web-App" class="github__link">
+            <i class="fab fa-github"></i> <Strong>CODE</Strong></a> 
+    </p>
+    <img src="img/pred_app_1.png" alt="screenshot of website" class="intro__img">
+
+</section>
+
+<div class="portfolio-item-individual">
+    <p>
+        This machine learning web app predicts software developer salaries 
+        based on <strong>data</strong>  from the <strong>2022 Stack Overflow survey</strong>.
+    </p>
+    <p>
+        It uses a <strong>Decision Tree  model</strong> to predict salaries based on factors such as experience,
+        education, programming language proficiency, and geographic location.
+        The app also displays some graphs to provide additional insights into the data,
+        and is an ideal tool for companies and recruiters who are looking to make data-driven hiring decisions.
+    </p>
+    <p>
+        The app is also useful for job seekers who want to know what to expect in terms of salary based on their experience and qualifications.
+    </p>
+    <p>
+        It's also <strong>user-friendly</strong> and <strong>intuitive</strong> , making it easy for anyone to use without any prior knowledge of machine learning or data analysis.
+    </p>
+    
+    <h4 class="screen_shot_text" >Mean salary according to experience line graph</h4>
+    <img src="img/pred_app_2.png" alt="">
+
+    <h4 class="screen_shot_text" >Mean salary according to experience baar graph</h4>
+    <img src="img/pred_app_3.png" alt="">
+
+    <h3 class="screen_shot_text" ><strong>Live Web App</strong> </h3>
+        <button class="btn" 
+        onclick="window.location.href='https://collins-omariba-dev-salary-pred-web-app-app-zi64hm.streamlit.app/';" >
+            OPEN
+        </button>
+        
+</div> 
+
+
+<!--Footer  -->
+<footer class="footer">
+    <a href="mailto:collinsomariba@gmail.com" class="footer__link">collinsomariba@gmail.com</a>
+    <ul class="social-list">
+        
+    <li class="social-list__item">
+            <a href="https://github.com/Collins-Omariba" class="social-list__link">
+                <i class="fab fa-github"></i>
+            </a>
+    </li> 
+
+    <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/omariba-collins-b28b841b9" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+   </li>  
+
+    <li class="social-list__item">
+        <a href="https://twitter.com/OmaribaCollins" class="social-list__link">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </li>
+
+    <li class="social-list__item">
+        <a href="https://www.kaggle.com/omaribacollins" class="social-list__link">
+            <i class="fab fa-kaggle"></i>
+        </a>
+    </li>
+
+
+    </ul>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>   
