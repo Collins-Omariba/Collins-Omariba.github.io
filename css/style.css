@@ -521,59 +521,6 @@ text-decoration: none;
 }
 
 
-/* Experience section */
-/* 
-.experience {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    text-align: center;
-    padding: 4em 0;
-}
-
-.section__title--experience {
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section__title--experience::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-dark);
-}
-
-.experience__item {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2em;
-    border: 5px solid var(--clr-accent);
-    border-radius: 10px;
-    margin-bottom: 2em;
-}
-
-.experience__title {
-    font-size: var(--fs-h2);
-    color: var(--clr-accent);
-}
-
-.experience__company,
-.experience__date,
-.experience__duration {
-    color: var(--clr-light);
-    margin: 0.5em 0;
-}
-
-.experience__description {
-    color: var(--clr-light);
-    margin-bottom: 1em;
-}
-
-.experience__skills {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-} */
 
 
 /* Experience section */
