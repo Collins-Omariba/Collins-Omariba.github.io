@@ -290,7 +290,7 @@ header{
 }
 
 /* My services section */
-
+/* Services Section */
 .my-services {
     background-color: var(--clr-dark);
     background-image: url(../img/my-services-bg.png);
@@ -298,14 +298,13 @@ header{
     background-blend-mode: multiply;
     color: var(--clr-dark);
     text-align: center;
-    
+    padding: 5em 2em; /* Adjust padding as needed */
 }
 
 .section__title--services{
-   
     color: var(--clr-accent);
     position: relative;
-
+    margin-bottom: 2rem; /* Adjust spacing as needed */
 }
 
 .section__title--services::after{
@@ -316,18 +315,42 @@ header{
     margin: 0.5em auto 1em;
     background: var(--clr-dark);
 }
+
 .services{
-    margin-bottom: 4em;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 0 auto;
-    
+    gap: 2rem; /* Adjust gap between service cards */
 }
-.service{
-    max-width: 500px;
-    margin: 0 auto;
+
+.service {
+    background-color: var(--clr-dark);
+    border: 5px solid var(--clr-dark);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--bs);
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+    opacity: 0.9; /* Set the initial opacity (adjust as needed) */
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.service-card__title {
+    font-size: var(--fs-h3);
+    color: var(--clr-accent);
+    margin-bottom: 0.5rem;
+}
+
+.service-card__description {
     color: var(--clr-light);
+    font-size: var(--fs-body);
+    margin-bottom: 1rem;
 }
+
 
 @media(min-width: 800px){
     .services{
@@ -556,7 +579,7 @@ text-decoration: none;
     max-width: 300px;
     margin: 1.5em;
     padding: 2em;
-    border: 5px solid var(--clr-accent);
+    border: 5px solid var(--clr-dark);
     border-radius: 10px;
     text-align: left;
     background-color: var(--clr-dark);
@@ -605,3 +628,4 @@ text-decoration: none;
     font-weight: var(--fw-bold);
     color: var(--clr-accent);
 }
+
