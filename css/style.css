@@ -599,10 +599,20 @@ text-decoration: none;
 }
 
 .experience__company{
-    color: var(--clr-light);
     margin: 0.2em 0;
     font-size: var(--fs-body);
     font-weight: var(--fw-bold);
+}
+
+.experience__company__link{
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+.experience__company, a:hover {
+    color: var(--clr-accent);
+    text-decoration: underline;
+    
 }
 
 .experience__date,
