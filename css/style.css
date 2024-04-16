@@ -609,7 +609,7 @@ text-decoration: none;
     text-decoration: none;
 }
 
-.experience__company, a:hover {
+.experience__company{
     color: var(--clr-accent);
     text-decoration: underline;
     
