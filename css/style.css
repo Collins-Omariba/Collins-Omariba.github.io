@@ -238,13 +238,19 @@ header{
 
 
 
-
+.section__subtitle--services{
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
 
 .section__subtitle--work{
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
+
+
 /* Intro section */
 
 .intro{
