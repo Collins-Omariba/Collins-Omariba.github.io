@@ -447,6 +447,10 @@ header{
     opacity: .5;
 }
 
+.portfolio__link{
+    color: var(--clr-accent);
+    text-decoration: none;
+}
 /* Footer */
 
 .footer{
