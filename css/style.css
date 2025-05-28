@@ -85,6 +85,17 @@ strong{
     transition: transform 200ms ease-in-out;
 }
 
+.btn.small {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
 .btn:hover{
     transform: scale(1.1);
 }
