@@ -610,16 +610,16 @@ text-decoration: none;
 .experience__container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    justify-content: space-between;
-        gap: 2em;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* gap: 2em; */
     margin-top: 2em;
 }
 
 .experience__item {
     max-width: 450px;
     margin: 1.5em;
-    padding: 2em;
+    padding: 1em;
     border: 5px solid var(--clr-dark);
     border-radius: 10px;
     text-align: left;
