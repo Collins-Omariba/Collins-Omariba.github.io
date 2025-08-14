@@ -1,3 +1,30 @@
+/* Skills section horizontal layout for large screens */
+.services {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.service {
+    flex: 1 1 0;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+@media (max-width: 900px) {
+    .services {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .service {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
 
 *
 *::before,
