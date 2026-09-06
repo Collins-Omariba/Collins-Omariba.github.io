@@ -4,299 +4,359 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OMARIBA</title>
+    <meta name="description" content="Omariba Collins, Embedded & IoT Systems Engineer. Embedded systems and the IoT backends that bring them to life.">
+    <meta name="theme-color" content="#05080f">
+    <title>OMARIBA | Embedded & IoT Systems Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <!-- fonts (confirm link) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900
-    |Source+Sans+Pro:300,900&display=swap">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="HTML tag logo">
-        </div>
+
+    <div class="body-glow"></div>
+    <div class="body-grid"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header">
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
-        <nav class="nav">
+
+        <nav class="nav" aria-label="primary">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home"class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services"class="nav__link">My Skills</a></li>
-                <li class="nav__item"><a href="#about"class="nav__link">About me </a></li>
-                <li class="nav__item"><a href="#experience"class="nav__link">Experience </a></li>
-                <li class="nav__item"><a href="#work"class="nav__link">My work</a></li>
+                <li class="nav__item" style="--d:.04s"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item" style="--d:.1s"><a href="#work" class="nav__link">Projects</a></li>
+                <li class="nav__item" style="--d:.16s"><a href="#services" class="nav__link">Skills</a></li>
+                <li class="nav__item" style="--d:.22s"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item" style="--d:.28s"><a href="#experience" class="nav__link">Experience</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Introduction-->
-
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hello, I am <strong> Omariba Collins</strong>
-        </h1>
-        <p class="section___subtitle  section___subtitle--intro">
-            <strong>
-                Embedded & IoT Systems Engineer
-            </strong> 
-        </p>
-        <img src="img/face.png" alt="A picture of Collins Omariba" class="intro__img">
-
-    </section>
-
-    <!--My services-->
-    
-    <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">Skills</h2>
-        <!-- <p class="section__subtitle section__subtitle--services">Individual focus & also Integrating them</p> -->
-        <div class="services">
-
-
-            <div class="service">
-                <div class="service-card">
-                    <h3 class="service-card__title">Embedded Systems</h3>
-
-                    <p class="service-card__description">
-                        I have experience in <strong>Firmware-first embedded system design</strong> and multi-platform hardware development across <strong>MCU, MPU, and SoC architectures</strong> (schematics, power design, layout, and bring-up)
-                    </p>
-
-                    <p class="service-card__description">
-                        I enjoy working close to the hardware, where performance, power, and reliability decisions are made at the system level.
-                    </p>
-
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero__inner">
+            <div class="hero__text">
+                <span class="hero__kicker">Embedded Systems & IoT &middot; Nairobi</span>
+                <h1 class="hero__title">
+                    <span class="hero__sm">Hello, I'm</span>
+                    Omariba Collins
+                </h1>
+                <span class="hero__role"><span class="dot"></span>Embedded &amp; IoT Systems Engineer</span>
+                <p class="hero__sub">
+                    I specialize in designing <strong class="hl">embedded systems</strong>, and can also work
+                    on the back-ends that bring them to life, from silicon-level bring-up to IoT telemetry streaming.
+                </p>
+                <div class="hero__ctas">
+                    <a class="btn" href="#work">Explore my work <span class="arrow" aria-hidden="true">&darr;</span></a>
+                    <a class="btn btn--ghost" href="#about">About me</a>
                 </div>
             </div>
 
-            <!-- service -->
-            <div class="service">
-                <div class="service-card">
-                    <h3 class="service-card__title">Back-End Development</h3>
-
-                    <p class="service-card__description">
-                        Beyond the device layer, 
-                        I have additional experience on building backend systems that support IoT deployments.
-                        Handling device communication, telemetry ingestion, observability, and scalable cloud integration.
-                    </p>
-                    
-
-                    <p class="service-card__description">
-                        My aim is to extend the capabilities of edge devices through reliable data flow, remote management, and system visibility.
-                    </p>
-                    
-                </div>
+            <div class="hero__avatar reveal revealed">
+                <img src="img/face.png" alt="Portrait of Omariba Collins" class="avatar__img">
             </div>
-            <!-- service -->  
- 
-
-
-
         </div>
-    </section> 
-        
- 
 
-    <!-- About me -->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about ">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about"> <strong>Embedded Systems & IoT Specialist</strong></p>
+        </section>
 
-        <div class="about-me__body">
-            
-            <p>
-                I specialize in hardware–software system integration, with embedded systems as my core specialization, while also leveraging my back-end development experience to build applications that enhance and extend hardware functionality.
-            </p>
-
-        </div>
-        <img src="img/about-me.jpg" alt="Omariba working on a computer" class="about-me__img">
-        
-    </section>
-
-
-    <!-- Experience -->
-    <section class="experience" id="experience">
-        <h2 class="section__title section__title--experience">Experience</h2>
-
-        <div class="experience__container">
-
-            <div class="experience__item">
-                
-                <div class="experience__position">
-                    <h3 class="experience__title">Research and Development Engineer</h3>
-                    <p class="experience__position-date">Nov 2025 – Present</p>
-                </div>
-                
-                <div class="experience__position">
-                    <h3 class="experience__title">Research and Development Intern</h3>
-                    <p class="experience__position-date">Aug 2025 – Oct 2025</p>
-                </div>
-                <p class="experience__company">
-                    <a href="https://www.davisandshirtliff.com/" class="experience__company__link" target="_blank" rel="noopener noreferrer">Davis & Shirtliff</a>
-                </p>
-                <p class="experience__description">
-                    <p>My role involves designing, prototyping, 
-                        and testing embedded systems for water and energy solutions, 
-                        while collaborating with multidisciplinary teams.
-                    </p>
-                    <p>I also work on back-end infrastructure for user-facing applications 
-                        that enable remote monitoring and control of systems plus contribute to technical documentation, 
-                        field testing, and continuous improvement of deployed solutions.
-                    </p>
-                </p>
-                <p class="experience__skills">
-                    Embedded Systems, IoT, Application Development, Prototyping
-                </p>
+    <!-- PROJECTS -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="kicker">FEATURED</span>
+                <h2 class="sec-title">Personal<em> Projects</em></h2>
+                <p class="sec-sub">A selection of some of the hardware and software systems I've designed and prototyped, physical, digital, and everything between.</p>
             </div>
 
-            <div class="experience__item">
-                <h3 class="experience__title">Freelance Software Developer</h3>
-                <p class="experience__company">
-                    <a href="https://www.upwork.com/freelancers/~01777ccde1bc049146" class="experience__company__link" target="_blank" rel="noopener noreferrer">Upwork</a>
-                </p>
-                <p class="experience__date">Sep 2023 – Mar 2025</p>
-                <p class="experience__description">
-                <p><strong>Completed a long-term contract as a Back-End Developer (Sep 2023 – Mar 2025) with a 5.0-star client rating.</strong></p>
+            <div class="proj-grid">
 
-                <p>Provided freelance software development services for startups and small businesses.</p>   
-                <p>Built scalable APIs, designed databases and worked with, plus implemented machine learning models.</p>    
-                </p>
-                <p class="experience__skills">
-                    Python, REST APIs, SQL, NoSQL, Neural Networks, Supervised Learning
-                </p>
-            </div>
-
-            <div class="experience__item">
-                <h3 class="experience__title">Mechatronics Engineering Intern</h3>
-                <p class="experience__company">
-                    <a href="https://nakujaproject.com/" class="experience__company__link">Nakuja Project</a>
-                </p>
-                <p class="experience__date">May 2023 - Jan 2024</p>
-                <p class="experience__description">
-                <p> <strong>Successfully launched 3 model rockets 
-                    powered by fully tested K class solid rocket motors.
-                </strong></p>
-          
-                <p>
-                    I was part of the rocket propulsion team developing and testing a K class solid rocket motor.
-                </p>
-                <p>
-                    Designed motor parts based on simulation values & machined them, designed remote testing & ignition circuitry, programmed microcontrollers for remote ignition & data collection, and analyzed collected data.  
-                </p>
-                </p>
-                <p class="experience__skills">
-                    C, C++, Python, IoT, Embedded Systems, CAD
-                </p>
-            </div>
-
-
-
-
-        </div>
-    </section>
-
-
-
-    <!-- About me -->
-    <section class="my-work" id="work">
-        <h2 class="section__title section__title--work" >Projects</h2>
-        <p class="section__subtitle section__subtitle--work">some of my projects</p>
-        <div class="portfolio">
-
-            <!--Portfolio image item 01  -->
-            <a href="Smart-Learning-Toy-Car-Robot.html" class="portfolio__item">
-                <img src="img/FYP.png" alt="" class="portfolio__img">
-            </a>
-
-            <!--Portfolio image item 02  -->
-            <a href="ESP32-IoT-4-Layer-PCB.html" class="portfolio__item">
-                <img src="img/ESP_32_IoT_PCB_3d.png" alt="ESP32 IoT 4-layer PCB project" class="portfolio__img">
-             </a>
-
-
-            <!--Portfolio image item 03  -->
-            <a href="Autonomous-Mobile-Robot.html" class="portfolio__item">
-                <img src="img/AMR.png" alt="" class="portfolio__img">
-            </a>
-             
-            
-            <!--Portfolio image item 04  -->
-            <a href="Savannah-Silica-Django-Backend.html" class="portfolio__item">
-                <img src="img/savannah_silica.jpg" alt="" class="portfolio__img">
-            </a>
-
-
-            <!--Portfolio image item 05  -->
-            <a href="avr.html" class="portfolio__item">
-                <img src="img/avr.png" alt="" class="portfolio__img">
-             </a>
-
-            <!--Portfolio image item 06  -->
-            <a href="Restaurant-Web-App.html" class="portfolio__item">
-                <img src="img/home_restaurante.png" alt="" class="portfolio__img">
-            </a>
-
-
-            <!--Portfolio image item 06  -->
-            <a href="ML-PhotoShop-Web-App.html" class="portfolio__item">
-                <img src="img/home.png" alt="" class="portfolio__img">
-            </a>
-
-
-            <!-- Portfolio image item 07  -->
-            <a href="Spotify-music-rooms.html" class="portfolio__item">
-                <img src="img/musify_music_playing.png" alt="" class="portfolio__img">
-            </a>
-
-
-
-            
-        </div>
-    </section>
-
-    
-
-    <!--Footer  -->
-    <footer class="footer">
-        <a href="mailto:collinsomariba@gmail.com" class="footer__link">collinsomariba@gmail.com</a>
-        <ul class="social-list">
-            
-        <li class="social-list__item">
-                <a href="https://github.com/Collins-Omariba" class="social-list__link">
-                    <i class="fab fa-github"></i>
+                <a class="proj-card reveal" data-tilt style="--d:.02s" href="Smart-Learning-Toy-Car-Robot.html">
+                    <span class="proj-card__idx">01</span>
+                    <span class="proj-card__media">
+                        <img src="img/FYP.png" alt="Smart Learning Toy Car Robot built on Raspberry Pi and Arduino">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">Smart Learning Toy Car Robot</span>
+                        <span class="proj-card__desc">AI voice-controlled robot car built on a Raspberry Pi 4 with a reSpeaker mic HAT, driven from a custom web app and Bluetooth companion app.</span>
+                        <span class="proj-card__tags"><i>Raspberry Pi 4</i><i>Arduino Mega</i><i>AI voice</i><i>Web + Bluetooth</i></span>
+                    </span>
                 </a>
-        </li> 
 
-        <li class="social-list__item">
-            <a href="https://www.linkedin.com/in/omariba-collins-b28b841b9" class="social-list__link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-       </li>  
+                <a class="proj-card reveal" data-tilt style="--d:.05s" href="ESP32-IoT-4-Layer-PCB.html">
+                    <span class="proj-card__idx">02</span>
+                    <span class="proj-card__media">
+                        <img src="img/ESP_32_IoT_PCB_3d.png" alt="3D render of the ESP32-C3 IoT 4-layer PCB">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">ESP32 IoT 4-Layer PCB</span>
+                        <span class="proj-card__desc">Production-style board with RF-aware layout, battery backup, and SD data logging.</span>
+                        <span class="proj-card__tags"><i>KiCad</i><i>DFM Layout</i><i>IoT</i></span>
+                    </span>
+                </a>
 
-       <li class="social-list__item">
-        <a href="https://medium.com/@collinsomariba" class="social-list__link">
-            <i class="fab fa-medium"></i>
-        </a>
-   </li>
-        <li class="social-list__item">
-            <a href="https://twitter.com/OmaribaCollins" class="social-list__link">
-                <i class="fab fa-x-twitter"></i>
-            </a>
-        </li>
+                <a class="proj-card reveal" data-tilt style="--d:.1s" href="Autonomous-Mobile-Robot.html">
+                    <span class="proj-card__idx">03</span>
+                    <span class="proj-card__media">
+                        <img src="img/AMR.png" alt="Autonomous mobile robot with LiDAR">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">Autonomous Mobile Robot</span>
+                        <span class="proj-card__desc">ROS2 robot     with LiDAR SLAM and autonomous navigation, built with Team R.O.O.K. Droid.</span>
+                        <span class="proj-card__tags"><i>ROS2</i><i>LiDAR</i><i>SLAM</i></span>
+                    </span>
+                </a>
 
-        <li class="social-list__item">
-            <a href="https://www.kaggle.com/omaribacollins" class="social-list__link">
-                <i class="fab fa-kaggle"></i>
-            </a>
-        </li>
+                <a class="proj-card reveal" data-tilt style="--d:.15s" href="Savannah-Silica-Django-Backend.html">
+                    <span class="proj-card__idx">04</span>
+                    <span class="proj-card__media">
+                        <img src="img/savannah_silica.jpg" alt="Savannah Silica Django backend">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">Savannah Silica Backend</span>
+                        <span class="proj-card__desc">Open-source Django backend with clean REST APIs.</span>
+                        <span class="proj-card__tags"><i>Python</i><i>Django</i><i>DRF</i></span>
+                    </span>
+                </a>
 
+                <a class="proj-card reveal" data-tilt style="--d:.08s" href="avr.html">
+                    <span class="proj-card__idx">05</span>
+                    <span class="proj-card__media">
+                        <img src="img/avr.png" alt="ATmega328P microcontroller programming projects">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">Microcontroller Programming</span>
+                        <span class="proj-card__desc">Bare-metal AVR work, C, C++, assembly, ATmega328P, and Proteus simulations.</span>
+                        <span class="proj-card__tags"><i>C</i> <i>C++</i><i>AVR</i><i>Assembly</i></span>
+                    </span>
+                </a>
 
-        </ul>
+                <a class="proj-card reveal" data-tilt style="--d:.13s" href="Restaurant-Web-App.html">
+                    <span class="proj-card__idx">06</span>
+                    <span class="proj-card__media">
+                        <img src="img/home_restaurante.png" alt="Restaurant web app home screen">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">Restaurant Web App</span>
+                        <span class="proj-card__desc">Full-stack restaurant platform with DRF API, JWT auth, and a live deployment.</span>
+                        <span class="proj-card__tags"><i>Django</i><i>DRF</i><i>PostgreSQL</i></span>
+                    </span>
+                </a>
+
+                <a class="proj-card reveal" data-tilt style="--d:.18s" href="ML-PhotoShop-Web-App.html">
+                    <span class="proj-card__idx">07</span>
+                    <span class="proj-card__media">
+                        <img src="img/home.png" alt="ML PhotoShop web app interface">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">ML PhotoShop Web App</span>
+                        <span class="proj-card__desc">Client-side image laboratory using JavaScript and OpenCV.js for filters and edge detection.</span>
+                        <span class="proj-card__tags"><i>JavaScript</i><i>OpenCV.js</i></span>
+                    </span>
+                </a>
+
+                <a class="proj-card reveal" data-tilt style="--d:.22s" href="Spotify-music-rooms.html">
+                    <span class="proj-card__idx">08</span>
+                    <span class="proj-card__media">
+                        <img src="img/musify_music_playing.png" alt="Spotify music rooms app while music is playing">
+                    </span>
+                    <span class="proj-card__body">
+                        <span class="proj-card__title">Spotify Music Rooms</span>
+                        <span class="proj-card__desc">React + Django app that synchronizes Spotify listening sessions inside shared rooms.</span>
+                        <span class="proj-card__tags"><i>React</i><i>Django</i><i>Spotify API</i></span>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="kicker">core competencies</span>
+                <h2 class="sec-title">Skills &amp; <em>Tools</em></h2>
+                <p class="sec-sub">Close to the hardware, comfortable in the cloud, and comfortable bridging the two.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service service--core reveal" style="--d:.05s">
+                    <div class="service__icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                    <div class="service-card__head">
+                        <h3 class="service-card__title service-card__title--core">Embedded Systems</h3>
+                        <span class="core-badge">core focus</span>
+                    </div>
+                    <p class="service-card__description">
+                        Firmware-first embedded design and multi-platform hardware development across
+                        <strong>MCU, MPU, and SoC architectures</strong>, schematics, power design, layout, and bring-up.
+                    </p>
+                    <p class="service-card__description">I work close to the hardware, where performance, power, and reliability decisions are made at the system level.</p>
+                    <div class="service-skills">
+                        <span class="tech-chip">C</span>
+                        <span class="tech-chip">C++</span>
+                        <span class="tech-chip">KiCad</span>
+                        <span class="tech-chip">STM32</span>
+                        <span class="tech-chip">ESP32</span>
+                    </div>
+                </div>
+
+                <div class="service reveal" style="--d:.12s">
+                    <div class="service__icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+                    <h3 class="service-card__title">Back-End Development</h3>
+                    <p class="service-card__description">
+                        Beyond the device layer, back-ends that support IoT deployments: device communication,
+                        telemetry ingestion, observability, and <strong>scalable cloud integration</strong>.
+                    </p>
+                    <p class="service-card__description">My aim: extend edge devices through reliable data flow, remote management, and system visibility.</p>
+                    <div class="service-skills">
+                        <span class="tech-chip">Python</span>
+                        <span class="tech-chip">TypeScript</span>
+                        <span class="tech-chip">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container about__grid">
+            <div class="about__media reveal">
+                <img src="img/about-me.png" alt="Omariba working on computer hardware" class="about__img">
+            </div>
+
+            <div class="about__body reveal" style="--d:.1s">
+                <span class="about__label">Who I am</span>
+                <h2 class="about__title">Hardware <em>touching</em> data,<br>from edge to cloud.</h2>
+                <p>
+                    I specialize in hardware&ndash;software system integration, with <strong class="hl">embedded
+                    systems</strong> as my core specialization. I pair it with back-end development to build
+                    applications that enhance and extend what the hardware can do.
+                </p>
+                <p>
+                    From reading a datasheet to shipping a REST API, I follow the full current, between
+                    a trace on a PCB and a packet in the cloud.
+                </p>
+                <div class="about__stats">
+                    <div class="stat"><b id="yearsBuilding">6+</b><span>years building</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="kicker">mission log</span>
+                <h2 class="sec-title">Field <em>Experience</em></h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__card">
+                        <div class="timeline__top">
+                            <span class="timeline__role">R&amp;D Engineer</span>
+                            <span class="exp-date">Nov 2025 &ndash; present</span>
+                        </div>
+                        <div class="timeline__top">
+                            <span class="timeline__role">R&amp;D Intern</span>
+                            <span class="exp-date">Aug &ndash; Oct 2025</span>
+                        </div>
+                        <span class="exp-org"><a href="https://www.davisandshirtliff.com/" target="_blank" rel="noopener noreferrer">Davis &amp; Shirtliff</a></span>
+                        <p>Designing, prototyping, and testing embedded systems for water and energy solutions while collaborating with multidisciplinary teams.</p>
+                        <p>Building back-end infrastructure for user-facing applications that enable remote monitoring and control, plus contributing to technical documentation and field testing.</p>
+                        <div class="exp-skills">
+                            <span class="tech-chip">Embedded Systems</span>
+                            <span class="tech-chip">IoT</span>
+                            <span class="tech-chip">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__card">
+                        <div class="timeline__top">
+                            <span class="timeline__role">Freelance Software Developer</span>
+                            <span class="exp-date">Sep 2023 &ndash; Mar 2025</span>
+                        </div>
+                        <span class="exp-org"><a href="https://www.upwork.com/freelancers/~01777ccde1bc049146" target="_blank" rel="noopener noreferrer">Upwork</a></span>
+                        <p>Long-term back-end development contract with a <strong>5.0&ndash;star client rating</strong> for startups and small businesses, scalable APIs, database design, and production machine-learning models.</p>
+                        <div class="exp-skills">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">REST APIs</span>
+                            <span class="tech-chip">SQL / NoSQL</span>
+                            <span class="tech-chip">Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__card">
+                        <div class="timeline__top">
+                            <span class="timeline__role">Mechatronics Engineering Intern</span>
+                            <span class="exp-date">May 2023 &ndash; Jan 2024</span>
+                        </div>
+                        <span class="exp-org"><a href="https://nakujaproject.com/" target="_blank" rel="noopener noreferrer">Nakuja Project</a></span>
+                        <p>Successfully launched 3 model rockets powered by fully tested K-class solid rocket motors. Designed and machined motor parts from simulation values, built remote ignition &amp; telemetry circuitry, and programmed the data-collection microcontrollers.</p>
+                        <div class="exp-skills">
+                            <span class="tech-chip">C</span>
+                            <span class="tech-chip">C++</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">IoT</span>
+                            <span class="tech-chip">CAD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="mailto:collinsomariba@gmail.com" class="footer__link">collinsomariba@gmail.com</a>
+
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="https://github.com/Collins-Omariba" class="social-list__link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/in/omariba-collins-b28b841b9" class="social-list__link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://medium.com/@collinsomariba" class="social-list__link" aria-label="Medium">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://twitter.com/OmaribaCollins" class="social-list__link" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.kaggle.com/omaribacollins" class="social-list__link" aria-label="Kaggle">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer__credit">Designed &amp; engineered by Omariba Collins</p>
+        </div>
     </footer>
+
+    <noscript>
+        <style>.reveal { opacity: 1; transform: none; filter: none; }</style>
+    </noscript>
     <script src="js/index.js"></script>
 </body>
 </html>
