@@ -1240,6 +1240,29 @@ header.scrolled::before {
   margin: .5rem 0;
 }
 
+.exp-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: .5rem 0 .25rem;
+  display: grid;
+  gap: .55rem;
+}
+
+.exp-list li {
+  color: var(--clr-secondary);
+  font-size: .94rem;
+  line-height: 1.7;
+}
+
+.exp-list li::marker {
+  color: var(--clr-accent);
+}
+
+.exp-list li strong {
+  color: var(--clr-primary);
+  font-weight: 600;
+}
+
 .exp-skills {
   display: flex;
   flex-wrap: wrap;
