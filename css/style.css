@@ -1270,6 +1270,18 @@ header.scrolled::before {
   margin-top: .9rem;
 }
 
+@media (max-width: 640px) {
+  .timeline__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .45rem;
+  }
+
+  .timeline__top + .timeline__top {
+    margin-top: .65rem;
+  }
+}
+
 /* ============ footer ============ */
 .footer {
   position: relative;

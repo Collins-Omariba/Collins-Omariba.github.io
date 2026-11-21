@@ -25,7 +25,7 @@
 
   const yearsBuildingEl = document.getElementById('yearsBuilding');
   if (yearsBuildingEl) {
-    const start = new Date(2020, 0, 1);
+    const start = new Date(2022, 0, 1);
     const now = new Date();
     const years = Math.max(0, Math.floor((now.getTime() - start.getTime()) / (365.25 * 24 * 3600 * 1000)));
     yearsBuildingEl.textContent = `${years}+`;
