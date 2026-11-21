@@ -1233,6 +1233,25 @@ header.scrolled::before {
   border-color: var(--clr-accent);
 }
 
+.exp-org-row {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin: .5rem 0 .2rem;
+}
+
+.exp-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, .6);
+}
+
 .timeline__card p {
   color: var(--clr-secondary);
   font-size: .94rem;
@@ -1279,6 +1298,12 @@ header.scrolled::before {
 
   .timeline__top + .timeline__top {
     margin-top: .65rem;
+  }
+
+  .exp-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
   }
 }
 
