@@ -891,6 +891,189 @@ header.scrolled::before {
   margin-bottom: .9rem;
 }
 
+/* ============ work tabs (experience + projects) ============ */
+.work-tabs {
+  position: relative;
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  gap: 2px;
+  padding: 6px;
+  margin: 0 auto 2.4rem;
+  background: var(--clr-surface);
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .7);
+}
+
+.work-tab {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .68em 1.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  border-radius: var(--radius-full);
+  font-family: var(--ff--primary);
+  font-size: .92rem;
+  font-weight: 500;
+  color: var(--clr-secondary);
+  transition: color .25s ease;
+  white-space: nowrap;
+}
+
+.work-tab:hover {
+  color: var(--clr-primary);
+}
+
+.work-tab.is-active {
+  color: #fff;
+}
+
+.work-tab sup {
+  font-family: var(--ff--secondary);
+  font-size: .64rem;
+  font-weight: 500;
+  padding: .18em .55em;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid var(--clr-quaternary);
+}
+
+.work-tab.is-active sup {
+  background: rgba(255, 255, 255, .18);
+  border-color: rgba(255, 255, 255, .3);
+  color: #fff;
+}
+
+.work-tabs__pill {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 6px;
+  width: 0;
+  border-radius: var(--radius-full);
+  background: var(--clr-accent);
+  box-shadow: 0 6px 22px -6px rgba(10, 132, 255, .7);
+  transition: left .45s var(--ease), width .45s var(--ease);
+}
+
+.work-panel {
+  display: none;
+}
+
+.work-panel.is-active {
+  display: block;
+  animation: panelIn .55s var(--ease);
+}
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* professional cards: icon media, org badge, role footer */
+.proj-card--pro .proj-card__media--icon {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(420px 200px at 50% -10%, rgba(10, 132, 255, .28), transparent 65%),
+    linear-gradient(135deg, #17171d, #0d0d11);
+  overflow: hidden;
+}
+
+.proj-card--pro .proj-card__media--icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(70% 80% at 50% 40%, #000, transparent 75%);
+  mask-image: radial-gradient(70% 80% at 50% 40%, #000, transparent 75%);
+}
+
+.proj-card--pro .proj-card__media--icon > i {
+  font-size: 3.1rem;
+  color: var(--clr-accent);
+  filter: drop-shadow(0 10px 26px rgba(10, 132, 255, .5));
+  transition: transform .5s var(--ease);
+}
+
+.proj-card--pro:hover .proj-card__media--icon > i {
+  transform: scale(1.12) rotate(-4deg);
+}
+
+.proj-card__org {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35em .85em .35em .4em;
+  font-family: var(--ff--secondary);
+  font-size: .66rem;
+  letter-spacing: .02em;
+  color: #fff;
+  background: rgba(10, 10, 12, .62);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: var(--radius-full);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.proj-card__org img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+}
+
+.proj-card__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  margin-top: 1rem;
+  padding-top: .9rem;
+  border-top: 1px dashed rgba(255, 255, 255, .13);
+}
+
+.proj-card__role {
+  font-family: var(--ff--secondary);
+  font-size: .66rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+}
+
+.proj-card__link {
+  font-size: .82rem;
+  color: var(--clr-secondary);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.proj-card__link:hover {
+  color: var(--clr-primary);
+}
+
 /* ============ skills ============ */
 .services {
   position: relative;

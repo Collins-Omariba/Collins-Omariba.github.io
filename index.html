@@ -65,16 +65,74 @@
 
         </section>
 
-    <!-- PROJECTS -->
+    <!-- WORK: experience + projects at a glance -->
     <section class="work" id="work">
         <div class="container">
             <div class="sec-head reveal">
-                <span class="kicker">FEATURED</span>
-                <h2 class="sec-title">Personal<em> Projects</em></h2>
-                <p class="sec-sub">A selection of some of the hardware and software systems I've designed and prototyped, physical, digital, and everything between.</p>
+                <span class="kicker">WORK</span>
+                <h2 class="sec-title">Selected <em>Work</em></h2>
+                <p class="sec-sub">Professional work and personal projects.</p>
             </div>
 
-            <div class="proj-grid">
+            <div class="work-tabs" role="tablist" aria-label="Work categories">
+                <button class="work-tab is-active" role="tab" aria-selected="true" data-work-tab="professional">
+                    <i class="fa-solid fa-briefcase" aria-hidden="true"></i> Professional
+                </button>
+                <button class="work-tab" role="tab" aria-selected="false" data-work-tab="personal">
+                    <i class="fa-solid fa-flask" aria-hidden="true"></i> Personal
+                </button>
+                <span class="work-tabs__pill" aria-hidden="true"></span>
+            </div>
+
+            <!-- PROFESSIONAL: pulled from Experience, shown as projects -->
+            <div class="work-panel is-active" id="panel-professional" role="tabpanel">
+                <div class="proj-grid">
+
+                    <article class="proj-card proj-card--pro reveal" data-tilt style="--d:.02s">
+                        <span class="proj-card__media proj-card__media--icon">
+                            <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+                            <span class="proj-card__org"><img src="img/davis__shirtliff_logo.jpeg" alt="">Davis &amp; Shirtliff</span>
+                        </span>
+                        <span class="proj-card__body">
+                            <span class="proj-card__title">Dayliff Smart Water Dispenser</span>
+                            <span class="proj-card__desc">NFC-authenticated water vending with remote monitoring, user access management and admin control.</span>
+                            <span class="proj-card__tags"><i>NFC</i><i>Embedded</i><i>IoT Backend</i></span>
+                            <span class="proj-card__foot"><span class="proj-card__role">R&amp;D Engineer</span><a href="#experience" class="proj-card__link">Role context <span aria-hidden="true">→</span></a></span>
+                        </span>
+                    </article>
+
+                    <article class="proj-card proj-card--pro reveal" data-tilt style="--d:.06s">
+                        <span class="proj-card__media proj-card__media--icon">
+                            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                            <span class="proj-card__org"><img src="img/davis__shirtliff_logo.jpeg" alt="">Davis &amp; Shirtliff</span>
+                        </span>
+                        <span class="proj-card__body">
+                            <span class="proj-card__title">PAYGO Controllers</span>
+                            <span class="proj-card__desc">Pay-As-You-Go control for pumps &amp; solar inverters — flexible payments, remote lock/unlock.</span>
+                            <span class="proj-card__tags"><i>PAYGO</i><i>Firmware</i><i>Power Systems</i></span>
+                            <span class="proj-card__foot"><span class="proj-card__role">R&amp;D Engineer</span><a href="#experience" class="proj-card__link">Role context <span aria-hidden="true">→</span></a></span>
+                        </span>
+                    </article>
+
+                    <article class="proj-card proj-card--pro reveal" data-tilt style="--d:.1s">
+                        <span class="proj-card__media proj-card__media--icon">
+                            <i class="fa-solid fa-industry" aria-hidden="true"></i>
+                            <span class="proj-card__org"><img src="img/davis__shirtliff_logo.jpeg" alt="">Davis &amp; Shirtliff</span>
+                        </span>
+                        <span class="proj-card__body">
+                            <span class="proj-card__title">Industrial IoT &amp; Automation</span>
+                            <span class="proj-card__desc">Panel-integrated &amp; standalone monitoring and control for water, energy and industrial plants.</span>
+                            <span class="proj-card__tags"><i>Industrial IoT</i><i>Automation</i><i>Hardware</i></span>
+                            <span class="proj-card__foot"><span class="proj-card__role">R&amp;D Engineer</span><a href="#experience" class="proj-card__link">Role context <span aria-hidden="true">→</span></a></span>
+                        </span>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- PERSONAL: existing builds -->
+            <div class="work-panel" id="panel-personal" role="tabpanel" hidden>
+                <div class="proj-grid">
 
                 <a class="proj-card reveal" data-tilt style="--d:.02s" href="Smart-Learning-Toy-Car-Robot.html">
                     <span class="proj-card__idx">01</span>
@@ -124,7 +182,9 @@
                     </span>
                 </a>
 
+                </div>
             </div>
+
         </div>
     </section>
 

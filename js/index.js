@@ -145,4 +145,39 @@
       });
     });
   }
+
+  // work tabs: professional <-> personal
+  const workTabs = document.querySelectorAll('.work-tab');
+  const workPill = document.querySelector('.work-tabs__pill');
+  const movePill = (btn) => {
+    if (!workPill || !btn) return;
+    workPill.style.left = `${btn.offsetLeft}px`;
+    workPill.style.width = `${btn.offsetWidth}px`;
+  };
+  const activateWorkTab = (btn) => {
+    if (!btn) return;
+    workTabs.forEach((t) => {
+      t.classList.toggle('is-active', t === btn);
+      t.setAttribute('aria-selected', t === btn ? 'true' : 'false');
+    });
+    document.querySelectorAll('.work-panel').forEach((p) => {
+      const on = p.id === `panel-${btn.dataset.workTab}`;
+      p.classList.toggle('is-active', on);
+      if (on) {
+        p.hidden = false;
+        p.querySelectorAll('.reveal').forEach((el) => el.classList.add('revealed'));
+      } else {
+        p.hidden = true;
+      }
+    });
+    movePill(btn);
+  };
+  if (workTabs.length) {
+    workTabs.forEach((btn) => btn.addEventListener('click', () => activateWorkTab(btn)));
+    const initial = document.querySelector('.work-tab.is-active') || workTabs[0];
+    // reveal pro cards immediately since panel starts visible
+    document.querySelectorAll('#panel-professional .reveal').forEach((el) => el.classList.add('revealed'));
+    requestAnimationFrame(() => movePill(initial));
+    window.addEventListener('resize', () => movePill(document.querySelector('.work-tab.is-active')));
+  }
 })();
