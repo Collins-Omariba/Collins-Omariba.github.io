@@ -1315,6 +1315,15 @@ header.scrolled::before {
   color: var(--clr-tertiary);
 }
 
+.about__connect {
+  margin-top: 1.7rem;
+}
+
+.social-list.social-list--left {
+  justify-content: flex-start;
+  margin: 0;
+}
+
 /* ============ experience ============ */
 .experience {
   position: relative;
